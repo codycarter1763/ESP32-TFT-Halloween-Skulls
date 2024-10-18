@@ -11,8 +11,12 @@
 
 <h1>Parts List</h1>
 
+- Plastic Skull or other halloween decoration
 - ESP32 Microcontroller Board
 - 2x 1.44" TFT LCD with SPI 128x128
 - 5 Volt Power Supply
   - If using 12 V supply make sure to use a buck voltage converter as the max recommended Vin     voltage is 5V
-- 
+- Jumper wires for connection
+
+<h1>Wiring</h1>
+
