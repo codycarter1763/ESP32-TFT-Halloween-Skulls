@@ -20,3 +20,29 @@
 
 <h1>Wiring</h1>
 
+| TFT | ESP32 |
+|-----------------|-----------------|
+| MOSI or SDA | D23 |
+| SCL | D18 |
+| CS TFT 1 | D22 |
+| CS TFT 2 | D21 |
+| DC or A0 | D2 |
+| RST | D4 |
+| BL or LED | 3.3V (Or 100ohm resistor in series with 5V) |
+
+<h1>Setting Up Arduino Libraries</h1>
+
+1. Download the ESP32 board package by navigating to Boards Manager and typing esp32
+2. Download the eSPI Arduino library by navigating to Library Manager and typing TFT_eSPI
+3. Navigate to your Arduino folder through your computer's file manager, click on libraries, click on TFT_eSPI, open User_Setup.h with Notepad++ or a similar notepad, scroll to around line 210 and edit the config to the following for ESP32 and particular display:
+
+![Screenshot 2024-10-18 224908](https://github.com/user-attachments/assets/bb7206d9-0ecf-4d7c-96db-7ecae27ad309)
+
+4. Save and close
+5. Open up Animated_Eyes_2 example in eSPI library
+6. Uncomment #define USE_DMA as the display performance will be better
+7. If you want to configure the types of eyes to be displayed, navigate to config.h and uncomment #include fucntions for whichever design you prefer
+8. Enjoy!
+
+
+
