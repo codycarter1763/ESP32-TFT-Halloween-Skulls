@@ -7,7 +7,7 @@
 </p>
 
 <h1>About</h1>
-<h6> &emsp; This is a guide and build log of how to implement animated eyes into a halloween skull using the ESP32 microcontroller and two 1.44" SPI TFT screens. This is a fairly easy project, though it does take some TFT_eSPI library configuration to optimize the ESP32 and the 1.44" SPI TFT hardware.</h6>
+ &emsp; This is a guide and build log of how to implement animated eyes into a halloween skull using the ESP32 microcontroller and two 1.44" SPI TFT screens. This is a fairly easy project, though it does take some TFT_eSPI library configuration to optimize the ESP32 and the 1.44" SPI TFT hardware.
 
 <h1>Parts List</h1>
 
@@ -42,7 +42,22 @@
 5. Open up Animated_Eyes_2 example in eSPI library
 6. Uncomment #define USE_DMA as the display performance will be better
 7. If you want to configure the types of eyes to be displayed, navigate to config.h and uncomment #include fucntions for whichever design you prefer
-8. Enjoy!
+8. Time to install system into skull!
 
+<h1>Skull Assembly</h1>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/19e2d2e3-2418-494b-9161-9be76953c31e" width=40% height=40%>
+</p>
 
+With my halloween skull, I cut the back off of the skull with a hacksaw and used a dremel to carve out the eye holes in the front. To keep moisture out of the skull, I used a thin sheet of transparent plastic similar to a milk carton to glue to the eye holes. That way, it'll add water protection and durability protection as the TFT screens can be a bit fragile.
+
+As you can see in the photo above, I used a waterproof tape like duck tape to secure the screens just in case I needed to modify or fix my setup. I also used double sided tape to secure the ESP32 and buck converter (to step down my 12 volt supply to 5 volts) to the top of the skull to help protect against moisture damage in case some water did get inside. 
+
+For the wiring, I spliced together female to female jumper wires used for breadboards to make the connections easy to install and modify in case of breakage. 
+
+Once I made sure everything works as expected, I put the back half of the skull back on with waterproof tape to keep moisture out the best I could.
+
+<h1>Closing</h1>
+
+If you made it this far, thank you so much for reading about my animated halloween skulls build. Hopefully this inspired you to create your own animated eyes for halloween decorations or any other project you might be pursuing. 
